@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:future_music/commons/res/app_pages.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -13,19 +14,6 @@ class MainAppPage extends StatelessWidget {
       title: '姜来',
       getPages: Routes.getPages,
       initialRoute: '/splash',
-      // builder: (context, child) {
-      //   return Stack(
-      //     children: [
-      //       child!,
-      //       if (context.isDarkMode)
-      //         IgnorePointer(
-      //           child: Container(
-      //             color: Colors.black12,
-      //           ),
-      //         )
-      //     ],
-      //   );
-      // },
     );
   }
 }
