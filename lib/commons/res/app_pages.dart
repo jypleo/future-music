@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:future_music/pages/home/home_binding.dart';
+import 'package:future_music/pages/home/home_view.dart';
 import 'package:future_music/pages/not_found/splash_binding.dart';
 import 'package:future_music/pages/not_found/splash_view.dart';
 import 'package:future_music/pages/splash/splash_binding.dart';
@@ -12,6 +14,11 @@ class Routes {
         name: '/splash',
         page: () => const SplashPage(),
         binding: SplashBinding()),
+    CustomGetPage(
+        name: '/home',
+        page: () => const HomePage(),
+        binding: HomeBinding(),
+        transition: Transition.fadeIn),
   ];
 
   static final unknownRoute = CustomGetPage(

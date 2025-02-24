@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:future_music/commons/res/app_thems.dart';
+import 'package:future_music/commons/res/app_themes.dart';
 import 'package:future_music/pages/splash/splash_controller.dart';
 import 'package:future_music/utils/adapt.dart';
 import 'package:future_music/utils/image_utils.dart';
@@ -12,16 +12,12 @@ class SplashPage extends GetView<SplashController> {
   Widget build(BuildContext context) {
     Adapt.initContext(context);
     return Scaffold(
-        backgroundColor: AppThems.appMain,
+        backgroundColor: AppThemes.app_main,
         body: Container(
             padding: EdgeInsets.only(top: 100),
             width: Adapt.screenW(),
             height: Adapt.screenH(),
-            child: Column(children: [
-              Image.asset(
-                'assets/anim/cif.webp',
-              )
-            ])));
+            child: Column(children: [buildContent()])));
   }
 
   Widget buildContent() {
